@@ -41,15 +41,12 @@ docker-compose up
 Por favor leia [CONTRIBUTING.md](CONTRIBUTING.md) para saber detalhes sobre nossa conduta e processo de pull requests.
 
 ## Autores
-
-Projeto iniciado pelos seguintes desenvolvedores
-
+  
+Projeto iniciado pelos seguintes desenvolvedores  
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://drive.google.com/uc?id=1J6kyIZF5A4xEpvoU_QPnASwEL3BlZyho" width="100px;"/><br /><sub><b>João Chaves </b></sub>](https://github.com/jchavesjr)<br /> | [<img src="https://drive.google.com/uc?id=1pH3IntPVkjF9m9Qss_x3Zi6nz2rJiDRQ" width="100px;"/><br /><sub><b>Armando Del Col</b></sub>](https://github.com/DinhuX)<br /> | [<img src="https://drive.google.com/uc?id=1odqy22fU-mB6LDVCNQUTAxgqlgc1PDvG" width="100px;"/><br /><sub><b>Jhonatan Martins</b></sub>](https://github.com/JhoMartins)<br /> | [<img src="https://avatars2.githubusercontent.com/u/15186322?s=460&v=4" width="100px;"/><br /><sub><b>Léo Rocha</b></sub>](https://github.com/Leoxxid)<br /> |
-| :---: | :---: | :---: | :---: | :---: |
-| [<img src="https://drive.google.com/uc?id=1ZkeNpyj48FJmGLN8MAuRNp5QwNWR5frG" width="100px;"/><br /><sub><b>Henrique Montalione</b></sub>](https://github.com/henriquemontalione)<br /> |
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+| [<img src="https://drive.google.com/uc?id=1J6kyIZF5A4xEpvoU_QPnASwEL3BlZyho" width="100px;"/><br /><sub><b>João Chaves </b></sub>](https://github.com/jchavesjr)<br /> | [<img src="https://drive.google.com/uc?id=1pH3IntPVkjF9m9Qss_x3Zi6nz2rJiDRQ" width="100px;"/><br /><sub><b>Armando Del Col</b></sub>](https://github.com/DinhuX)<br /> | [<img src="https://drive.google.com/uc?id=1odqy22fU-mB6LDVCNQUTAxgqlgc1PDvG" width="100px;"/><br /><sub><b>Jhonatan Martins</b></sub>](https://github.com/JhoMartins)<br /> | [<img src="https://avatars2.githubusercontent.com/u/15186322?s=460&v=4" width="100px;"/><br /><sub><b>Léo Rocha</b></sub>](https://github.com/Leoxxid)<br /> | [<img src="https://drive.google.com/uc?id=1ZkeNpyj48FJmGLN8MAuRNp5QwNWR5frG" width="100px;"/><br /><sub><b>Henrique Montalione</b></sub>](https://github.com/henriquemontalione)<br /> |
+| :---: | :---: | :---: | :---: | :---: | 
 
 
 ## Licensa
