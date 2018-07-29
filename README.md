@@ -9,7 +9,7 @@ Buscar Trampo é um projeto de estudo que centraliza vagas de programação dist
   * [Primeiros passos](#primeiros-passos)
   * [Como contribuir](#como-contribuir)
   * [Autores](#autores)
-  * [Licensa](#licensa)
+  * [Licença](#licensa)
 
 ### Pré requisitos
 É preciso ter instalado em sua máquina:
@@ -49,6 +49,6 @@ Projeto iniciado pelos seguintes desenvolvedores
 | :---: | :---: | :---: | :---: | :---: | 
 
 
-## Licensa
+## Licença
 
 Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes
