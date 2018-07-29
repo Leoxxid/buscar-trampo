@@ -3,8 +3,7 @@ require "nokogiri"
 
 class ProgramathorScraping
   def initialize(skill, page="1")
-    html = open("https://programathor.com.br/jobs-" + URI.escape(skill) + "?page=#{page.to_s}")
-    @doc = Nokogiri::HTML(html, nil, Encoding::UTF_8.to_s)  
+    @doc = parsed_template("https://programathor.com.br/jobs-" + URI.escape(skill) + "?page=#{page.to_s}")
   end
 
   def jobs
@@ -24,8 +23,11 @@ class ProgramathorScraping
   private
 
     def description(job_url)
-      doc = Nokogiri::HTML(open(job_url), nil, Encoding::UTF_8.to_s)
+      doc = parsed_template(job_url)
       return doc.css(".wrapper-content-job-show div")[4].text.strip.delete("\n")
     end
     
+    def parsed_template(url)
+      return Nokogiri::HTML(open(url), nil, Encoding::UTF_8.to_s)
+    end
 end
