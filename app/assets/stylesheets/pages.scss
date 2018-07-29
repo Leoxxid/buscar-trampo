@@ -1,0 +1,21 @@
+.home {
+  .title {
+    color: #616161;
+    text-align: left;
+    font-size: 24px;
+  }
+  .wrapper-home {
+    display: flex;
+    .search-form {
+      flex: 1;
+      margin-left: 5px;
+    }
+    .jobs-img {
+      width: 316px;
+      height: 239px;
+    }
+    .search-button {
+      background-color: #f4511e;
+    }
+  }
+}

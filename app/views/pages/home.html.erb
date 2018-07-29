@@ -1,0 +1,15 @@
+<div class="home">
+  <div class="center">
+    <h4 class="title">Pesquise novas oportunidades de trabalho de acordo com uma palavra chave</h4>
+    <div class="wrapper-home">
+      <%= image_tag("jobs.png", class: "jobs-img") %>
+      <%= form_tag("/search", method: "post", :class => 'search-form') do %>
+        <div class="input-field">
+          <input id="search" type="search" required />
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+        </div>
+        <%= submit_tag("Buscar", class: "waves-effect waves-light btn search-button") %>
+      <% end %>
+    </div>
+  </div>
+</div>
