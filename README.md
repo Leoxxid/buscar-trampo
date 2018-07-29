@@ -5,7 +5,7 @@
 Buscar Trampo é um projeto de estudo que centraliza vagas de programação distribuídas pela internet. O processo é simples, você pesquisa a vaga que deseja e caso se interesse é encaminhado para o site que a disponibilizou.
 
 ## Índice
-  * [Pré requisitos](#pre-requisitos)
+  * [Pré requisitos](#pré-requisitos)
   * [Primeiros passos](#primeiros-passos)
   * [Como contribuir](#como-contribuir)
   * [Autores](#autores)
