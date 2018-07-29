@@ -48,7 +48,7 @@ Projeto iniciado pelos seguintes desenvolvedores
 <!-- prettier-ignore -->
 | [<img src="https://lh5.googleusercontent.com/J79BsMBwpjnrX4TU6tqIBhjwLOuiCvZ98b0mw_uKd-QWkabrH1NQu-pFSM3i2PoN6bEFk9Ej-XrEzCroaByh=w1305-h567-rw" width="100px;"/><br /><sub><b>João Chaves </b></sub>](https://github.com/jchavesjr)<br /> | [<img src="https://lh4.googleusercontent.com/Vip-DwUIU5yQBgj_PdtJ9hznPNJsl0jntOeLojPTrEjiPz92HNbBsNMPmzAb_NGi6bxVcyH4CiwQB_gW-bio=w1305-h567-rw" width="100px;"/><br /><sub><b>Armando Del Col</b></sub>](https://github.com/DinhuX)<br /> | [<img src="https://lh6.googleusercontent.com/FHCrjvfKp2fPs3OHBiNc3Y1UjjHq0UiCwKVa3H6QUVYAClhOZnWqfq3L66380i2P_Imcxw1n3wzXgNmTkD26=w1305-h567-rw" width="100px;"/><br /><sub><b>Jhonatan Martins</b></sub>](https://github.com/JhoMartins)<br /> | [<img src="https://avatars2.githubusercontent.com/u/15186322?s=460&v=4" width="100px;"/><br /><sub><b>Léo Rocha</b></sub>](https://github.com/Leoxxid)<br /> |
 | :---: | :---: | :---: | :---: | :---: |
-| [<img src="https://lh6.googleusercontent.com/1aAbBsEgs7YBdzPRhO66zL1wr-pLRyzR9DrqJGKlGvLGTbKfXgbzaGu8bBFn_1XNL65goi3yaBFuOVZutITN=w1305-h567" width="100px;"/><br /><sub><b>Demian Dekoninck</b></sub>](https://github.com/henriquemontalione)<br /> |
+| [<img src="https://lh6.googleusercontent.com/1aAbBsEgs7YBdzPRhO66zL1wr-pLRyzR9DrqJGKlGvLGTbKfXgbzaGu8bBFn_1XNL65goi3yaBFuOVZutITN=w1305-h567" width="100px;"/><br /><sub><b>Henrique Montalione</b></sub>](https://github.com/henriquemontalione)<br /> |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 
