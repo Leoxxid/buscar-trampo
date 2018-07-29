@@ -1,6 +1,11 @@
 version: "3"
 
 services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.3.0
+    ports:
+      - "9200:9200"
+
   postgres:
     image: "postgres:9.5"
     volumes:
@@ -29,6 +34,7 @@ services:
     depends_on:
       - "postgres"
       - 'redis'
+      - 'elasticsearch'
     build: .
     command: bash start.sh
     ports:
