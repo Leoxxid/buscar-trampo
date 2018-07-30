@@ -1,0 +1,8 @@
+:queues:
+  - scraping
+  - default
+
+:schedule:
+  jobs_updater_job:
+    cron: '0 * * * * *'   # Runs once per minute
+    class: JobsUpdaterJob
