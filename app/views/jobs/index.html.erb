@@ -1,0 +1,29 @@
+<div class="jobs">
+    <div class="center">
+      <%= form_tag("/jobs/index", method: "get", :class => 'search-form') do %>
+        <div class="input-field">
+          <input id="search" type="search" required />
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+        </div>
+        <%= submit_tag("Buscar", class: "waves-effect waves-light btn search-button") %>
+      <% end %>
+      <% @jobs.each do |j| %>
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <div class="card horizontal">
+              <div class="card-content card-jobs">
+                <div class="wrapper-jobs col s12 m10 l10">
+                  <p class="company"><%= j[:title] %></p>
+                  <p class="title"><%= j[:company] %></p>
+                </div>
+                <div class="col s12 m2 l2 right-align">
+                  <a href=<%= "/campaigns/" %>><button class="visualizar-btn">Visualizar</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+       
+    </div>
+</div>

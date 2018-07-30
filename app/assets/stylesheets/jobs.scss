@@ -1,0 +1,39 @@
+.jobs {
+  .search-form {
+    display: flex;
+    //flex-wrap: wrap;
+    width: 80%;
+    .input-field {
+      width: 50%;
+    }
+    .search-button {
+      background-color: #f4511e;
+      margin-top: 1.7rem;
+      margin-left: 1rem;
+    }
+  }
+  .card-jobs {
+    width: 100%;
+  }
+  .wrapper-jobs {
+    text-align: initial;
+    .company {
+      font-weight: bold;
+    }
+    .title {
+      color: #9e9e9e;
+    }
+  }
+  .visualizar-btn {
+    background-color: #106cc8;
+    color: white;
+    border: none;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .input-field {
+    flex: 1;
+  }
+}
