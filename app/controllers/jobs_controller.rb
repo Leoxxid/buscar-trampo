@@ -3,6 +3,6 @@ class JobsController < ApplicationController
   end
 
   def index
-    @jobs = Job.all
+    @jobs = Job.search "*"
   end
 end
