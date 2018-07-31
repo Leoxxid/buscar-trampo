@@ -5,8 +5,7 @@ namespace :populate_jobs do
   task :create_jobs => :environment do
     Rake::Task['db:reset'].invoke
     20.times do
-      fake_tag = Tag.all.sample
-      job = FactoryBot.create(:job, tag: fake_tag)
+      job = FactoryBot.create(:job)
     end
   end
 end

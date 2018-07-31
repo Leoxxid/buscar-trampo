@@ -3,6 +3,6 @@ class JobsController < ApplicationController
   end
 
   def index
-    @jobs = ProgramathorScraping.new("ruby-on-rails").jobs
+    @jobs = Job.all
   end
 end
