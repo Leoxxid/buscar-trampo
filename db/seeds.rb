@@ -1,4 +1,4 @@
-Tag.create(name: "Ruby on Raiils")
+Tag.create(name: "Ruby on Rails")
 Tag.create(name: "Python")
 Tag.create(name: "Java")
 Tag.create(name: "Angular")
