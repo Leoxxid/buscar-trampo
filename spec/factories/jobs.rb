@@ -1,11 +1,11 @@
 FactoryBot.define do
   factory :job do
-    image_url "MyString"
-    title "MyString"
-    company "MyString"
-    description "MyText"
-    locale "MyString"
-    job_url "MyString"
-    tag nil
+    image_url   { FFaker::Image.url }
+    title       { FFaker::JobBR.title }
+    company     { FFaker::Company.name }
+    description { FFaker::HipsterIpsum.paragraphs }
+    locale      { FFaker::AddressBR.city }
+    job_url     { FFaker::InternetSE.http_url }
+    tag         Tag.all.sample
   end
 end
