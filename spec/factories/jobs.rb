@@ -6,6 +6,6 @@ FactoryBot.define do
     description { FFaker::HipsterIpsum.paragraphs }
     locale      { FFaker::AddressBR.city }
     job_url     { FFaker::InternetSE.http_url }
-    tag         Tag.all.sample
+    tag        
   end
 end
