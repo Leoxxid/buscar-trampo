@@ -3,20 +3,8 @@ version: "3"
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:6.3.0
-    container_name: elasticsearch
-    environment:
-      - node.name=es01
-      - cluster.name=docker-cluster
-      - bootstrap.memory_lock=true
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-    ulimits:
-      nproc: 65535
-      memlock:
-        soft: -1
-        hard: -1
     volumes:
       - elasticsearch:/usr/share/elasticsearch/data
-
 
   postgres:
     image: "postgres:9.5"
