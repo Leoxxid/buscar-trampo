@@ -3,8 +3,8 @@ version: "3"
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:6.3.0
-    ports:
-      - "9200:9200"
+    volumes:
+      - elasticsearch:/usr/share/elasticsearch/data
 
   postgres:
     image: "postgres:9.5"
@@ -35,6 +35,7 @@ services:
       - "postgres"
       - 'redis'
       - 'elasticsearch'
+
     build: .
     command: bash start.sh
     ports:
@@ -42,8 +43,11 @@ services:
     volumes:
       - .:/buscar_trampo
       - box:/box
+    environment:
+      - ELASTICSEARCH_HOST=elasticsearch
 
 volumes:
+  elasticsearch:
   redis:
   postgres:
   box:

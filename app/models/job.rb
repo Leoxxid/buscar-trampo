@@ -6,8 +6,10 @@ class Job < ApplicationRecord
 
   def search_data
     {
-      name: name,
+      title: title,
+      company: company,
       description: description,
+      locale: locale,
       tag_name: tag.name
     }
   end

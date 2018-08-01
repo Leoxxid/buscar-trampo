@@ -1,8 +1,8 @@
 class JobsController < ApplicationController
-  def show
-  end
+  def show; end
 
   def index
-    @jobs = Job.search "*"
+    @search = params[:search]
+    @jobs = Job.search params[:search] ||= '*', includes: [:tag]
   end
 end

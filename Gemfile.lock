@@ -276,7 +276,7 @@ DEPENDENCIES
   rails (~> 5.2.0)
   rspec-rails (~> 3.7)
   sass-rails (~> 5.0)
-  searchkick
+  searchkick (~> 3.1.0)
   selenium-webdriver
   sidekiq
   sidekiq-scheduler
