@@ -31,7 +31,7 @@ Depois de copiar o repositório para sua máquina, acesse o diretório raiz do p
 docker-compose build
 ```
 
-2.  Crie o banco de dados e execute as migrations
+2.  Crie o banco de dados
 
 ```
 docker-compose run --rm website bundle exec rails db:create
@@ -41,6 +41,30 @@ docker-compose run --rm website bundle exec rails db:create
 
 ```
 docker-compose up
+```
+
+4.  Sem desligar o servidor, abra uma nova janela e execute as migrations
+
+```
+docker-compose run --rm website bundle exec rails db:migrate
+```
+5.  Crie os registros estáticos do banco de dados
+
+```
+docker-compose run --rm website bundle exec rails db:seed
+```
+6.  Cadastrar vagas de emprego falsas (opcional)
+
+```
+docker-compose run --rm website bundle exec rake populate_jobs:create_jobs
+```
+
+7.  Crie os índices do elasticsearch
+
+```
+docker-compose run --rm website bundle exec rails console
+Tag.reindex
+Job.reindex
 ```
 
 ## Como contribuir

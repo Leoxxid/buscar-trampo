@@ -3,7 +3,7 @@ require "nokogiri"
 
 class ProgramathorScraping
   def initialize(skill, page="1")
-    @doc = parsed_template("https://programathor.com.br/jobs-" + URI.escape(skill) + "?page=#{page.to_s}")
+    @doc = parsed_template("https://programathor.com.br/jobs-#{skill.downcase.gsub(" ", "-")}?page=#{page.to_s}")
   end
 
   def jobs
