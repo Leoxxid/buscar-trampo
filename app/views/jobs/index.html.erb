@@ -12,10 +12,13 @@
           <div class="col s12 m12 l12">
             <div class="card horizontal">
               <div class="card-content card-jobs">
-                <div class="wrapper-jobs col s12 m10 l10">
+                <div class="col s12 m2 l2">
+                  <img class="responsive-img" src=<%= j[:image_url] %> />
+                </div>
+                <div class="wrapper-jobs col s12 m8 l8">
                   <p class="company"><%= j[:title] %></p>
                   <p class="title"><%= j[:company] %></p>
-                  <p class="title"><%= j.tag.name %></p>
+                  <p class="">Tag: <span class="tag"><%= j.tag.name %></span></p>
                 </div>
                 <div class="col s12 m2 l2 right-align">
                   <a href=<%= "/campaigns/" %>><button class="visualizar-btn">Visualizar</button></a>
