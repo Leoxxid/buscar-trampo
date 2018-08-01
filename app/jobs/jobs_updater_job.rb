@@ -7,7 +7,8 @@ class JobsUpdaterJob < ApplicationJob
     Tag.all.each do |tag|
       jobs = []
       (1..5).each do |page|
-        jobs << ProgramathorScraping.new(tag.name.downcase.gsub(" ", "-"), page).jobs
+        jobs << ProgramathorScraping.new(tag.name, page).jobs
+        jobs << EmpregosScraping.new(tag.name, page).jobs
       end
       jobs.flatten.each { |attrs| Job.create(attrs.merge(tag: tag))}
     end
