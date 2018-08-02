@@ -1,6 +1,6 @@
 <div class="jobs">
     <div class="center">
-      <%= form_with(url: "/jobs/index", method: "get", local: true, :class => 'search-form') do |f|%>
+      <%= form_with(url: "/jobs", method: "get", local: true, :class => 'search-form') do |f|%>
         <div class="input-field">
           <%= f.text_field :search, value:@search, type:"search", required:true %>
           <label class="label-icon" for="search"><i class="material-icons">search</i></label>

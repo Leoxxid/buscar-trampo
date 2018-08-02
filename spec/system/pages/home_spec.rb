@@ -16,7 +16,7 @@ RSpec.describe "Home view", :type => :system, js: true do
 			end
 			click_button 'Buscar'
 	
-			current_path.should == "/jobs/index"
+			current_path.should == "/jobs"
 			expect(page).to have_css(".card-jobs")
     end
 	end
@@ -31,7 +31,7 @@ RSpec.describe "Home view", :type => :system, js: true do
 	# 		end
 	# 		click_button 'Buscar'
 	
-	# 		current_path.should == "/jobs/index"
+	# 		current_path.should == "/jobs"
 	# 		expect(page).to have_css(".card-jobs")
   #   end
   # end

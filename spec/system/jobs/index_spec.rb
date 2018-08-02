@@ -9,26 +9,26 @@ RSpec.describe "Jobs Index", :type => :system, js: true do
 	context "search by job title" do
 		before { Job.reindex }
     it "show all jobs" do
-			visit '/jobs/index'
+			visit '/jobs'
 
 			expect(page).to have_css(".search-form")
 			expect(page).to have_css(".card-jobs")
 		end
 		
 		it "search a job" do
-			visit '/jobs/index'
+			visit '/jobs'
 			within(".search-form") do
 			  fill_in 'search', with: Job.first.title
 			end
 			click_button 'Buscar'
 			
-			current_path.should == "/jobs/index"
+			current_path.should == "/jobs"
 			expect(page).to have_css(".card-jobs")
 			expect(page).to have_content(Job.first.title)
 		end
 		
 		it "click on job" do
-			visit '/jobs/index'
+			visit '/jobs'
 
 			within(first(".card-jobs")) do
 				click_button 'Visualizar'
