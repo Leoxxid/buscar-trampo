@@ -3,7 +3,7 @@
       <%= form_with(url: "/jobs", method: "get", local: true, :class => 'search-form') do |f|%>
         <div class="input-field">
           <%= f.text_field :search, value:@search, type:"search", required:true %>
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <label class="label-icon" for="search"><i class="material-icons prefix">search</i></label>
         </div>
         <%= f.submit "Buscar", name: nil, class: "waves-effect waves-light btn search-button" %>
       <% end %>
@@ -16,9 +16,9 @@
                   <img class="responsive-img" src=<%= j[:image_url] %> />
                 </div>
                 <div class="wrapper-jobs col s12 m8 l8">
-                  <p class="company"><%= j[:title] %></p>
-                  <p class="title"><%= j[:company] %></p>
-                  <p class="">Tag: <span class="tag"><%= j.tag.name %></span></p>
+                  <p class="card-title"><%= j[:title] %></p>
+                  <p class="jobs-company"><%= j[:company] %>, <i class="material-icons md-18">place</i><%= j[:locale] %></p>
+                  <p class=""><i class="material-icons md-18">local_offer</i> <span class="tag"><%= j.tag.name %></span></p>
                 </div>
                 <div class="col s12 m2 l2 right-align">
                   <a href=<%= "/jobs/#{j[:id]}" %>><button class="visualizar-btn">Visualizar</button></a>

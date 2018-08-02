@@ -1,3 +1,32 @@
-<h1>Jobs#show</h1>
-<p><%= @job.description %></p>
-
+<h4 class="center title">Detalhes da vaga</h4>
+<div class="row">
+    <div class="col s12 m10 l10 offset-m1 offset-l1">
+      <div class="card">
+        <div class="card-content">
+          <div class="col s12 m2 l2">
+            <img class="responsive-img" src=<%= @job.image_url %> />
+          </div>
+          <div class="col s12 m8 l8">
+            <span class="card-title"><%= @job.title %></span>
+            <span class="job-company">
+              <%= @job.company %>
+              , <i class="material-icons">place</i><%= @job.locale %>
+            </span>
+            <p><i class="material-icons">local_offer</i> <span class="tag"><%= @job.tag.name %></span></p>
+          </div>
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <p class="job-description"><%=@job.description%></p>
+            </div>
+          </div>
+        </div>
+        <div class="card-action center">
+          <a class="job-link" href="<%= @job_url%>">
+            Link da vaga
+            <i class="material-icons align-middle">open_in_new</i>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+</div>
