@@ -1,5 +1,7 @@
 class JobsController < ApplicationController
-  def show; end
+  def show
+    @job = Job.find(params[:id])
+  end
 
   def index
     @search = params[:search]
