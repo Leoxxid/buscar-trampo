@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+gem 'jquery-rails'
 gem 'rails', '~> 5.2.0'
 gem 'sidekiq'
 gem 'sidekiq-scheduler'

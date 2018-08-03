@@ -1,9 +1,11 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/magicsuggest/2.1.4/magicsuggest-min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magicsuggest/2.1.4/magicsuggest-min.js"></script>
 <div class="jobs">
     <div class="center">
       <%= form_with(url: "/jobs", method: "get", local: true, :class => 'search-form') do |f|%>
         <div class="input-field">
-          <%= f.text_field :search, value:@search, type:"search", required:true %>
-          <label class="label-icon" for="search"><i class="material-icons prefix">search</i></label>
+          <i class="material-icons prefix">search</i>
+          <%= f.text_field :search, id:'search', class:'autocomplete', value:@search, type:"text", required:true, autocomplete:"off" %>
         </div>
         <%= f.submit "Buscar", name: nil, class: "waves-effect waves-light btn search-button" %>
       <% end %>

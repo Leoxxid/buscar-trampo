@@ -1,7 +1,9 @@
 class JobsController < ApplicationController
   def index
     @search = params[:search]
-    @jobs = Job.page.search @search ||= '*', page: params[:page], per_page: 15, includes: [:tag]
+    @jobs = Job.search @search || '*', includes: [:tag],
+                                       page: params[:page],
+                                       per_page: 8
   end
 
   def show

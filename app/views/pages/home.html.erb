@@ -3,12 +3,12 @@
     <h4 class="title">Pesquise novas oportunidades de trabalho de acordo com uma palavra chave</h4>
     <div class="wrapper-home">
       <%= image_tag("jobs.png", class: "jobs-img") %>
-      <%= form_tag("/jobs", method: "get", :class => 'search-form') do %>
+      <%= form_tag("/jobs", method: "get", :class => 'search-form', autocomplete:"off") do %>
         <div class="input-field">
-          <input id="search" type="search" name="search" required />
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons prefix">search</i>
+          <input id="search" class="autocomplete" type="text" name="search" autocomplete="off" required />
         </div>
-        <%= submit_tag("Buscar", class: "waves-effect waves-light btn search-button") %>
+        <%= submit_tag("Buscar", name: nil, class: "waves-effect waves-light btn search-button") %>
         <a href=<%= "/jobs" %>><button class="waves-effect waves-light btn search-button">Ver todos</button></a>
       <% end %>
     </div>
