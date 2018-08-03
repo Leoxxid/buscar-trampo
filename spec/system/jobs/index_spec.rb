@@ -27,15 +27,12 @@ RSpec.describe "Jobs Index", :type => :system, js: true do
 			expect(page).to have_content(Job.first.title)
 		end
 		
-		it "click on job" do
+		it "job link" do
 			visit '/jobs'
 
 			within(first(".card-jobs")) do
-				click_button 'Visualizar'
+				expect(page).to have_link("Visualizar", href: "/jobs/#{Job.first.id}")
 			end
-
-			# current_path.should == "/jobs/#{Job.first.id}"
-			# expect(page).to have_content(Job.first.description)
 		end
 	end
 end
