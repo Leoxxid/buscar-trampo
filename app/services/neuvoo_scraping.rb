@@ -9,13 +9,13 @@ class NeuvooScraping
   def jobs
     list = []
     @doc.css(".job-c").each do |job|
-      job_url = "https://neuvoo.com.br" + job.css(".j-title a").first["href"]
+      job_url = "https://neuvoo.com.br/view/?id=" + job.css(".j-title a").first["href"].split(/[\=&']/)[1]
       title = job.css(".j-title h2").text
       image_url = "https://neuvoo.com.br" + job.css(".j-logo").first["src"]
       company = job.css(".j-empname").text
       locale = job.css(".j-location").text
-      # description = description(job_url)
-      list.push(job_url: job_url, title: title, image_url: image_url, company: company, locale: locale)
+      description = description(job_url)
+      list.push(job_url: job_url, title: title, image_url: image_url, company: company, locale: locale, description: description)
     end 
     return list
   end
