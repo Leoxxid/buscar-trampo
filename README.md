@@ -67,6 +67,11 @@ Tag.reindex
 Job.reindex
 ```
 
+8. Rodando os testes de sistema
+```
+docker-compose run --rm website bundle exec rspec spec/system
+```
+
 ## Como contribuir
 
 Por favor leia [CONTRIBUTING.md](CONTRIBUTING.md) para saber detalhes sobre nossa conduta e processo de pull requests.
