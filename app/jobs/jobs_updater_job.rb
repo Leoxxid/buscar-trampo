@@ -5,17 +5,18 @@ class JobsUpdaterJob < ApplicationJob
   def perform(*args)
     Job.destroy_all
     Tag.all.each do |tag|
-      begin
-        jobs = []
-        (1..3).each do |page|
+      jobs = []
+      (1..3).each do |page|
+        begin
           jobs << ProgramathorScraping.new(tag.name, page).jobs
           jobs << EmpregosScraping.new(tag.name, page).jobs
-          jobs << NeuvooScraping.new(tag.name, page)
+          jobs << NeuvooScraping.new(tag.name, page).jobs
+        rescue
+          puts "Ops, ocorreu um erro ao buscar este job!"
         end
-        jobs.flatten.each { |attrs| Job.create(attrs.merge(tag: tag))}
-      rescue
-        puts "Ops, ocorreu um erro ao cadastrar este job!"
       end
+      jobs.flatten.each { |attrs| Job.create(attrs.merge(tag: tag))}
     end
+    Job.reindex
   end
 end

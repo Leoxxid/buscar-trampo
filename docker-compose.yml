@@ -31,6 +31,7 @@ services:
       - 'postgres'
       - 'redis'
       - 'website'
+      - 'elasticsearch'
     build: .
     command: bash start_jobs.sh
     volumes:
