@@ -4,5 +4,5 @@
 
 :schedule:
   jobs_updater_job:
-    cron: '0 0 * * * *'   # Runs every midnight
+    cron: '0 0 0 * * *'   # Runs every midnight
     class: JobsUpdaterJob
