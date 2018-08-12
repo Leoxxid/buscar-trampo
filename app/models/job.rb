@@ -1,7 +1,7 @@
 class Job < ApplicationRecord
   belongs_to :tag
 
-  searchkick language: "brazilian"
+  searchkick language: "brazilian", callbacks: :async
   scope :search_import, -> { includes(:tag) }
 
   def search_data
