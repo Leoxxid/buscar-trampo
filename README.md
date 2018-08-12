@@ -72,6 +72,11 @@ Job.reindex
 docker-compose run --rm website bundle exec rspec spec/system
 ```
 
+## Testando o Job ##
+
+Para testar o job que faz o webscraping, é necessário estar com o servidor no ar, mudar o horário de seu computador para 23:59(horário de Brasília)
+e aguardar a execucao do job. Para rodar manualmente, basta acessar o console do rails e executar: `JobsUpdaterJob.perform_ow`
+
 ## Como contribuir
 
 Por favor leia [CONTRIBUTING.md](CONTRIBUTING.md) para saber detalhes sobre nossa conduta e processo de pull requests.
